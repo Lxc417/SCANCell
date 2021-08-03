@@ -5,9 +5,11 @@ SCANCell is a new analysis pipeline that unveils the hidden association networks
 SCANCell takes the data in .RData format as input. The CyTOF data of each sample is saved as a separate .fcs or .csv file. The data is firstly transformed by an arc-hyperbolic sine function (arcsinh(•)) with a cofactor of 5. Then data of all examples are concatenated into an integrated data of .RData format.
 
 # Requirements
-	R
-	MATLAB
-	Cytoscape
+R
+
+MATLAB
+
+Cytoscape
 
 
 
