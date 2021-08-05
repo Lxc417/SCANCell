@@ -15,13 +15,13 @@ SCANCell takes the data in .RData format as input. The CyTOF data of each sample
 SCANCell mainly contains two analysis parts: sample classification and direct association (DA) network construction.
 
 ## Sample Classification
-We use phEMD, proposed by Bodenmiller, to classify samples into different subgroups. The installing and running of phEMD refer to https://github.com/KrishnaswamyLab/phemd. We made slightly changes for phEMD and output the results we required in a self-defined folder.
+We use phEMD, proposed by Bodenmiller, to classify samples into different subgroups. The installing and running of phEMD refer to https://github.com/KrishnaswamyLab/phemd. We made slightly changes for phEMD and output the following results we required in a self-defined folder.
 
 - classification results of all samples
 
 - cell clustering results of each sample
 
 ## DA Network Construction
-For each subgroup of samples, taking their cell-marker matrix data and the corresponding clustering labels of cells as input, executing MATLAB code construct_network.m to obtain the DA network expressed as the edges with weight. Then the network is visualized by Cytoscape software. Some auxiliary comments are marked in construct_network.m file.
+For each subgroup of samples, taking their cell-marker matrix data and the corresponding clustering labels of cells as input, executing MATLAB code construct_network.m to obtain the DA network expressed as the edges with weight. During the network construction, we use part mutual information (see the manuscript Part mutual information for quantifying direct associations in networks by Zhao,J. et al.) to measure the direct interactions between clusters. Then the network is visualized by Cytoscape software. Some auxiliary comments are marked in construct_network.m file.
 
  
