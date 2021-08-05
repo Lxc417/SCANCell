@@ -22,6 +22,6 @@ We use phEMD, proposed by Bodenmiller, to classify samples into different subgro
 - cell clustering results of each sample
 
 ## DA Network Construction
-For each subgroup of samples, taking their cell-marker matrix data and the corresponding clustering labels of cells as input, executing MATLAB code construct_network.m to obtain the DA network expressed as the edges with weight. During the network construction, we use part mutual information (see the manuscript Part mutual information for quantifying direct associations in networks by Zhao,J. et al.) to measure the direct interactions between clusters. Then the network is visualized by Cytoscape software. Some auxiliary comments are marked in construct_network.m file.
+For each subgroup of samples, taking their cell-marker matrix data and the corresponding clustering labels of cells as input, executing MATLAB code construct_network.m to obtain the DA network expressed as the edges with weight. During the network construction, we use part mutual information (see the manuscript Part mutual information for quantifying direct associations in networks by Zhao,J. et al.) to measure the direct interactions between clusters. Then the network is visualized by Cytoscape software. Some additional comments are marked in the construct_network.m file.
 
  
