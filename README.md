@@ -15,7 +15,7 @@ SCANCell takes the data in .RData format as input. The CyTOF data of each sample
 SCANCell mainly contains two analysis parts: sample classification and direct association (DA) network construction.
 
 ## Sample Classification
-We use phEMD, proposed by Bodenmiller, to classify samples into different subgroups. The installing and running of phEMD refer to https://github.com/KrishnaswamyLab/phemd. We made slightly changes for phEMD and output the following results we required in a self-defined folder.
+We use phEMD, proposed by Bodenmiller, to classify samples into different subgroups. The installing and running of phEMD refer to https://github.com/KrishnaswamyLab/phemd. We made slightly changes for phEMD and output the following results we required in a self-defined folder (such as the folder named results_from_PhEMD in the provided folder SCANCell).
 
 - classification results of all samples
 
